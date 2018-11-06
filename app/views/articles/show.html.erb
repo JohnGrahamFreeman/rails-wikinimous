@@ -1,4 +1,7 @@
+<%= link_to "Edit", "#{article_path(@article)}/edit"%>
+
 <h2><%= @article.title %></h2>
 <p><%= @article.content %></p>
 
+<%= link_to "Back to list", articles_path %>
 <%= link_to "Delete", article_path(@article), method: :delete %>
